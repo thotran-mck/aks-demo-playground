@@ -1,0 +1,16 @@
+apiVersion: v1 #version
+kind: Pod #app kind
+metadata:
+  name: "webapp"
+  namespace: default
+spec:
+  containers:
+    - name: nginx-container
+      image: nginx
+      ports:
+      - containerPort: 8080
+      readinessProbe:
+      httpGet:
+        path: /
+        port: 8080
+      failureThreshold: 3

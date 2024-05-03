@@ -1,0 +1,15 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: new-name
+spec:
+  replicas: 2
+  template:
+    spec:
+      containers:
+        - name: new-name
+          image: busybox:latest
+          resources:
+            limits:
+              cpu: 1
+              memory: 1Gi
