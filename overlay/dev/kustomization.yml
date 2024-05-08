@@ -12,4 +12,3 @@ patches:
       allowNameChange: true
 resources:
   - ../../base
-  - pod-to-be-deleted.yml
