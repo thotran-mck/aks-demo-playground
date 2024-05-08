@@ -8,7 +8,7 @@ spec:
     spec:
       containers:
         - name: new-name
-          image: busybox:latest
+          image: nginx:latest
           resources:
             limits:
               cpu: 1
