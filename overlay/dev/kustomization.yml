@@ -10,4 +10,4 @@ patches:
     options:
       allowNameChange: true
 resources:
-  - ../base
+  - ../../base
