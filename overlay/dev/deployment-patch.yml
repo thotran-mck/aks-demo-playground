@@ -7,7 +7,7 @@ spec:
   template:
     spec:
       containers:
-        - name: new-name
+        - name: nginx
           image: nginx:latest
           resources:
             limits:
